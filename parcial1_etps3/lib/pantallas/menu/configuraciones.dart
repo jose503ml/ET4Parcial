@@ -7,7 +7,7 @@ class Configuraciones extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Text(
-      'CONFIGURACIONES',
+      '“configuración del sistema”',
       style: TextStyle(fontSize: 30), //estilo de fuente y tamaño, color
     ));
   }

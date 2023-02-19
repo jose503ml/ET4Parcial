@@ -11,6 +11,7 @@ class Parcial1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       debugShowMaterialGrid: false, //desactivar el banner de debug
       home: Principal(), //llamar a la clase principal o instanciar
     );
