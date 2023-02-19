@@ -10,7 +10,7 @@ class Registrarse extends StatefulWidget {
 class _RegistrarseState extends State<Registrarse> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
         SizedBox(height: 10),
         Container(child: Text("PARCIAL I - ETPS3!", style: TextStyle(fontSize: 25))),
@@ -19,10 +19,12 @@ class _RegistrarseState extends State<Registrarse> {
         child:
         Image.network("https://thumbs.dreamstime.com/b/compruebe-al-usuario-logo-icon-design-128469980.jpg", width: 20,)),
         SizedBox(height: 10),
-        _campo("Igrese su nombre", Icons.person, false),
-        _campo("Ingrese su apellido", Icons.person, false),
-        _campo("Ingrese su usuario", Icons.person_pin_rounded, false),
-        _campo("Ingrese su password", Icons.security, true)
+        _campo("Carnet", Icons.person, false),
+        _campo("Nombre", Icons.person, false),
+        _campo("Apellidos", Icons.person, false),
+        _campo("Direccion", Icons.person, false),
+        _campo("Password", Icons.security, true),
+        _campo("RePassword", Icons.security, true)
       ],
     );
   }

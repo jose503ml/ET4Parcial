@@ -23,8 +23,10 @@ class _PrincipalState extends State<Principal> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: _paginas[itemseleccionado],
       bottomNavigationBar: BottomNavigationBar(
+
           type: BottomNavigationBarType.fixed,
           currentIndex: itemseleccionado,
           onTap: _navigateBottomBar1,
